@@ -1,20 +1,20 @@
 const experiences = [
   {
     period: "March 2025 — Present",
-    role: "Java Full Stack Developer",
+    role: "Senior Frontend Engineer",
     company: "Charles Schwab",
     description:
-      "Built scalable enterprise trading platforms using Java 17, Spring Boot, React, Angular, and microservices. Developed real-time dashboards, optimized APIs, and implemented event-driven services with Kafka. Deployed cloud-native applications on AWS with CI/CD pipelines and monitoring. Mentored junior developers and ensured secure coding standards.",
-    technologies: ["Java 17", "Spring Boot", "React", "Angular", "Kafka", "AWS"],
+      "Spearheaded end-to-end UX design and frontend engineering for an AI-native Developer Portal, delivering production React and TypeScript interfaces for GitHub workflows, SDLC automation, and AI assistant interaction patterns. Built a scalable component design system from Sketch wireframes to reusable UI components including chat panels, copilot surfaces, and contextual navigation. Integrated SSE and WebSockets for live agent execution feedback and real-time state updates. Applied WCAG accessibility standards, performance profiling, and code quality enforcement using ESLint, Prettier, and SonarQube.",
+    technologies: ["React", "TypeScript", "Redux", "Node.js", "SSE", "WebSockets", "Material UI", "Sketch"],
     current: true,
   },
   {
     period: "Sept 2023 — Feb 2025",
-    role: "Full Stack Java Developer",
+    role: "Frontend Developer",
     company: "Nike",
     description:
-      "Developed full-stack features for Nike’s e-commerce platform using React, Angular, and Spring Boot. Built modular components, GraphQL APIs, and asynchronous pipelines with Kafka. Managed cloud deployments on AWS and maintained CI/CD pipelines for high-performance product services.",
-    technologies: ["Java", "Spring Boot", "React", "Angular", "GraphQL", "AWS"],
+      "Delivered UX design and frontend engineering for high-traffic e-commerce and product catalog platforms used by millions of consumers globally. Designed wireframes and prototypes in Sketch and built a reusable component-driven design system using ReactJS, TypeScript, Redux, and Material UI. Integrated RESTful APIs and GraphQL endpoints with optimistic UI updates, loading states, and error boundaries. Ensured cross-browser compatibility, responsive CSS3 layouts, and performance optimization through lazy loading and code splitting.",
+    technologies: ["React", "TypeScript", "GraphQL", "Node.js", "Jest", "CSS3", "Sketch", "GitLab CI/CD"],
     current: false,
   },
   {
@@ -22,8 +22,8 @@ const experiences = [
     role: "Software Engineer",
     company: "UnitedHealth Group",
     description:
-      "Implemented automotive enterprise applications using Java, Spring Boot, React, and Angular. Developed RESTful APIs, reusable React components, and Kafka-based event-driven systems. Deployed and monitored services on AWS with Docker/Kubernetes, focusing on scalability and performance.",
-    technologies: ["Java", "Spring Boot", "React", "Angular", "Kafka", "AWS"],
+      "Designed and built responsive provider and member portal UX for enterprise healthcare applications, conducting stakeholder interviews and delivering intuitive claims processing interfaces that reduced support volume. Evolved a reusable UI component library using ReactJS, TypeScript, HTML5, CSS3, and Redux. Implemented React-based form validation, multi-step wizards, and data-entry UX patterns for provider enrollment and member registration workflows. Designed accessible interfaces following WCAG guidelines using Material UI and Bootstrap.",
+    technologies: ["React", "TypeScript", "Node.js", "Redux", "CSS3", "Bootstrap", "Material UI", "Sketch"],
     current: false,
   },
   {
@@ -31,8 +31,8 @@ const experiences = [
     role: "Software Developer",
     company: "Tata Consultancy Services",
     description:
-      "Built the insurance Product Editor tool using Java, Spring MVC/Boot, JSP, and jQuery. Developed dynamic UI, backend services, and integrated with Guidewire for claim processing. Secured APIs with OAuth2/JWT and implemented asynchronous workflows with JMS.",
-    technologies: ["Java", "Spring Boot", "JSP", "jQuery", "OAuth2", "JMS"],
+      "Designed and developed responsive web interfaces for insurance product configuration and policy management systems using HTML5, CSS3, JavaScript, and ReactJS. Implemented CSS-based theming and component styling to standardize visual design across multiple insurance product interfaces. Integrated frontend applications with RESTful APIs and Node.js services, building data-driven UI components for real-time policy and claims information. Produced wireframes and UX documentation to support stakeholder reviews and design iterations.",
+    technologies: ["React", "JavaScript", "HTML5", "CSS3", "Node.js", "RESTful APIs"],
     current: false,
   },
   {
@@ -40,10 +40,10 @@ const experiences = [
     role: "Software Developer",
     company: "AccelQ",
     description:
-      "Contributed to a cloud-based codeless test automation platform using Java, Spring Boot, and Selenium. Developed DOM inspection, data-driven testing, and backend APIs for automated test orchestration. Supported CI/CD pipelines and maintained database schemas with MySQL/PostgreSQL.",
-    technologies: ["Java", "Spring Boot", "Selenium", "MySQL", "PostgreSQL", "CI/CD"],
+      "Contributed to a cloud-based codeless test automation platform, building frontend interfaces and interactive configuration UX using JavaScript and HTML5 for non-technical users. Built reusable UI components and drag-and-drop workflow builders using JavaScript and CSS3. Designed and implemented a results dashboard UI using ReactJS and CSS3 that visualized test execution status and pass/fail trends in real time. Configured npm-based build toolchains and integrated GitHub Actions for frontend CI pipelines.",
+    technologies: ["React", "JavaScript", "CSS3", "HTML5", "npm", "GitHub Actions", "Jest"],
     current: false,
-  }
+  },
 ];
 
 export const Experience = () => {
