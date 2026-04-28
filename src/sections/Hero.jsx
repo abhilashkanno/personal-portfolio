@@ -129,7 +129,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Abhilash Kannoju — a Senior Frontend and UX/UI Engineer
+                Hi, I'm Abhilash Kannoju — a Senior Frontend
                 with 8+ years of experience building high-performance React and
                 TypeScript applications and translating design intent into
                 polished, accessible user interfaces.
@@ -140,11 +140,9 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                {
-                  icon: Linkedin,
-                  href: "https://www.linkedin.com/in/abhilashk99/",
-                },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/abhilashk99/" },
                 { icon: Github, href: "https://github.com/abhilashkanno" },
+                
               ].map((social, idx) => (
                 
                   key={idx}
@@ -156,15 +154,15 @@ export const Hero = () => {
               ))}
             </div>
           </div>
-
           {/* Right Column - Profile Image */}
-          <div className="relative animate-fade-in animation-delay-300">
+          <div className="relatice animate-fade-in animation-delay-300">
+            {/* Profile Image */}
             <div className="relative max-w-md mx-auto">
               <div
                 className="absolute inset-0 
-                rounded-3xl bg-gradient-to-br 
-                from-primary/30 via-transparent 
-                to-primary/10 blur-2xl animate-pulse"
+              rounded-3xl bg-gradient-to-br 
+              from-primary/30 via-transparent 
+              to-primary/10 blur-2xl animate-pulse"
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
@@ -182,7 +180,6 @@ export const Hero = () => {
                     </span>
                   </div>
                 </div>
-
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                   <div className="text-2xl font-bold text-primary">8+</div>
@@ -203,11 +200,11 @@ export const Hero = () => {
           <div className="relative overflow-hidden">
             <div
               className="absolute left-0 top-0 bottom-0 w-32
-              bg-gradient-to-r from-background to-transparent z-10"
+             bg-gradient-to-r from-background to-transparent z-10"
             />
             <div
               className="absolute right-0 top-0 bottom-0 w-32
-              bg-gradient-to-l from-background to-transparent z-10"
+             bg-gradient-to-l from-background to-transparent z-10"
             />
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => (
@@ -224,7 +221,7 @@ export const Hero = () => {
 
       <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 
-        animate-fade-in animation-delay-800"
+      animate-fade-in animation-delay-800"
       >
         
           href="#about"
