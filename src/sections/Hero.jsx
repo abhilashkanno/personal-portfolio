@@ -57,10 +57,6 @@ const skills = [
   "Scrum",
 ];
 
-const socials = [
-  { icon: Linkedin, href: "https://www.linkedin.com/in/abhilashk99/" },
-  { icon: Github, href: "https://github.com/abhilashkanno" },
-];
 
 export const Hero = () => {
   return (
@@ -101,7 +97,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Senior Frontend & UX/UI Engineer
+                Full Stack Developer
               </span>
             </div>
 
@@ -120,25 +116,29 @@ export const Hero = () => {
                 Hi, I'm Abhilash Kannoju — a Senior Frontend Engineer
                 with 8+ years of experience building high-performance React and
                 TypeScript applications and translating design intent into
-                polished, accessible user interfaces.
-              </p>
+                polished, accessible user interfaces. </p>
             </div>
+
+            
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
-              {socials.map((social, idx) => (
+              {[
+                { icon: Linkedin, href: "https://www.linkedin.com/in/abhilashk99/" },
+                { icon: Github, href: "https://github.com/abhilashkanno" },
                 
+              ].map((social, idx) => (
+                <a
                   key={idx}
                   href={social.href}
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
-                  <social.icon className="w-5 h-5" />
+                  {<social.icon className="w-5 h-5" />}
                 </a>
               ))}
             </div>
           </div>
-
           {/* Right Column - Profile Image */}
           <div className="relatice animate-fade-in animation-delay-300">
             {/* Profile Image */}
@@ -208,7 +208,7 @@ export const Hero = () => {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 
       animate-fade-in animation-delay-800"
       >
-        
+        <a
           href="#about"
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
