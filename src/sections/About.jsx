@@ -3,26 +3,27 @@ import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: "Frontend Engineering",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Building scalable React and TypeScript applications with reusable component systems and clean, maintainable code.",
   },
   {
     icon: Rocket,
     title: "Performance",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Delivering fast, accessible interfaces through lazy loading, code splitting, and real-time data integration.",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    title: "UX Design",
+    description:
+      "Translating wireframes and Sketch prototypes into polished, intuitive user experiences from concept to production.",
   },
   {
     icon: Lightbulb,
     title: "Innovation",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Exploring AI-native interfaces, agentic workflows, and modern frontend tooling to stay ahead of the curve.",
   },
 ];
 
@@ -38,7 +39,6 @@ export const About = () => {
                 About Me
               </span>
             </div>
-
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
               Building the future,
               <span className="font-serif italic font-normal text-white">
@@ -46,19 +46,32 @@ export const About = () => {
                 one component at a time.
               </span>
             </h2>
-
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I’m a passionate full stack Java developer with over 8 years of experience building scalable, reliable applications that solve real-world problems. What started as curiosity about how systems work has grown into strong expertise in backend architecture, modern web development, and cloud technologies.
+                I'm a Senior Frontend with over 8 years of
+                experience building high-performance, production-grade web
+                applications across financial services, healthcare, e-commerce,
+                and insurance industries. What started as a curiosity about how
+                interfaces come to life has grown into deep expertise in React,
+                TypeScript, and user-centered design.
               </p>
               <p>
-                I specialize in Java, Spring Boot, microservices, and frontend frameworks like React and Angular — building everything from enterprise-grade backend systems to dynamic, user-friendly web applications. I also work extensively with cloud platforms like AWS, Azure, and GCP, ensuring applications are scalable, secure, and performant. My approach focuses on clean architecture, reliability, and writing maintainable, production-ready code.
+                I specialize in ReactJS, TypeScript, JavaScript, HTML5, CSS3,
+                Node.js, and npm — building everything from reusable component
+                libraries and design systems to real-time dashboards and
+                AI-native developer portals. I work closely with designers using
+                Sketch and Figma, translating wireframes and prototypes into
+                accessible, performant interfaces that users love. My approach
+                balances clean frontend architecture with strong UX execution,
+                always keeping the end user in focus.
               </p>
               <p>
-                When I’m not coding, I’m exploring new technologies, contributing to open-source projects, and continuously learning to stay ahead in the ever-evolving tech landscape.
+                When I'm not building interfaces, I'm exploring emerging
+                frontend tooling, contributing to design systems, and staying
+                current with the rapidly evolving landscape of AI-assisted
+                development and modern web technologies.
               </p>
             </div>
-
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
                 "My mission is to create digital experiences that are not just
@@ -68,7 +81,7 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
+          {/* Right Column - Highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div
