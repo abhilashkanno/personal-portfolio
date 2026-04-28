@@ -138,21 +138,20 @@ export const Hero = () => {
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">Follow me: </span>
-              {[
-  { icon: Linkedin, href: "https://www.linkedin.com/in/abhilashk99/" },
-  { icon: Github, href: "https://github.com/abhilashkanno" }
-].map((social, idx) => (
-              
-                
-                  key={idx}
-                  href={social.href}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
-                >
-                  {<social.icon className="w-5 h-5" />}
-                </a>
-              ))}
-            </div>
+  <span className="text-sm text-muted-foreground">Follow me: </span>
+  {[
+    { icon: Linkedin, href: "https://www.linkedin.com/in/abhilashk99/" },
+    { icon: Github, href: "https://github.com/abhilashkanno" }
+  ].map((social, idx) => (
+    
+      key={idx}
+      href={social.href}
+      className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+    >
+      <social.icon className="w-5 h-5" />
+    </a>
+  ))}
+</div>
           </div>
           {/* Right Column - Profile Image */}
           <div className="relatice animate-fade-in animation-delay-300">
