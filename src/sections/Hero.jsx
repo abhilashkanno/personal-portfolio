@@ -10,101 +10,69 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
-  // Frontend
+  // Frontend Core
   "React",
-  "Next.js",
   "TypeScript",
-  "Redux",
-  "AngularJS",
+  "JavaScript",
   "HTML5",
   "CSS3",
-  "Bootstrap",
+  "Redux",
+  "Next.js",
   "Tailwind CSS",
+  "Bootstrap",
+  "Material UI",
 
-  // Backend
+  // UX & Design
+  "Sketch",
+  "Figma",
+  "Wireframing",
+  "Prototyping",
+  "Design Systems",
+  "Component Libraries",
+
+  // Frontend Tooling
   "Node.js",
-  "Java",
-  "Spring Boot",
-  "Spring MVC",
-  "Spring Data",
-  "Spring Security",
-  "Hibernate",
-  "J2EE",
-  "Servlets",
-  "JSP",
-  "JDBC",
-  "GraphQL",
+  "npm",
+  "Webpack",
+  "Vite",
+  "ESLint",
+  "Prettier",
+  "Storybook",
+
+  // APIs & Integration
   "RESTful APIs",
-  "SOAP",
-  "Microservices Architecture",
-  "Serverless Architecture",
-
-  // Databases
-  "PostgreSQL",
-  "MySQL",
-  "Oracle",
-  "DB2",
-  "MongoDB",
-  "Redis",
-  "Prisma",
-
-  // Messaging & Streaming
-  "JMS",
-  "ActiveMQ",
-  "Apache Kafka",
-
-  // Cloud
-  "AWS (EC2, S3, Lambda, API Gateway, CloudFormation)",
-  "Microsoft Azure",
-  "Google Cloud Platform (GCP)",
-  "Vercel",
-
-  // DevOps
-  "Docker",
-  "Kubernetes",
-  "Helm",
-  "Jenkins",
-  "GitHub Actions",
-  "GitLab",
+  "GraphQL",
+  "SSE",
+  "WebSockets",
 
   // Testing
   "Jest",
+  "React Testing Library",
   "Cypress",
-  "JUnit",
-  "Mockito",
   "Selenium",
   "Postman",
-  "JMeter",
 
-  // Monitoring & Logging
-  "Elasticsearch",
-  "Logstash",
-  "Kibana",
-  "Prometheus",
-  "Grafana",
-  "Log4J",
+  // Version Control & CI/CD
+  "Git",
+  "GitHub",
+  "GitHub Actions",
+  "GitLab CI/CD",
+
+  // Cloud & DevOps
+  "AWS",
+  "Docker",
+  "Kubernetes",
+
+  // Code Quality
   "SonarQube",
+  "WCAG Accessibility",
 
-  // Security
+  // Other
   "OAuth 2.0",
   "JWT",
-
-  // Languages
-  "C",
-  "C++",
-  "Python",
-
-  // Tools & Other
-  "Git",
-  "Figma",
-  "Swagger",
-  "JSON",
-  "XML",
-  "Design Patterns",
-  "MVC",
-  "Linux"
+  "Agile",
+  "Scrum",
 ];
-
 
 export const Hero = () => {
   return (
@@ -145,7 +113,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Full Stack Developer
+                Senior Frontend & UX/UI Engineer
               </span>
             </div>
 
@@ -161,21 +129,24 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-               Hi, I'm Abhilash Kannoju — a full stack developer specializing in Java, Spring Boot, and React. I build scalable, high-performance web applications that users love.
+                Hi, I'm Abhilash Kannoju — a Senior Frontend and UX/UI Engineer
+                with 8+ years of experience building high-performance React and
+                TypeScript applications and translating design intent into
+                polished, accessible user interfaces.
               </p>
             </div>
-
-            
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Linkedin, href: "https://www.linkedin.com/in/abhilashk99/" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/abhilashk99/",
+                },
                 { icon: Github, href: "https://github.com/abhilashkanno" },
-                
               ].map((social, idx) => (
-                <a
+                
                   key={idx}
                   href={social.href}
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
@@ -185,15 +156,15 @@ export const Hero = () => {
               ))}
             </div>
           </div>
+
           {/* Right Column - Profile Image */}
-          <div className="relatice animate-fade-in animation-delay-300">
-            {/* Profile Image */}
+          <div className="relative animate-fade-in animation-delay-300">
             <div className="relative max-w-md mx-auto">
               <div
                 className="absolute inset-0 
-              rounded-3xl bg-gradient-to-br 
-              from-primary/30 via-transparent 
-              to-primary/10 blur-2xl animate-pulse"
+                rounded-3xl bg-gradient-to-br 
+                from-primary/30 via-transparent 
+                to-primary/10 blur-2xl animate-pulse"
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
@@ -211,6 +182,7 @@ export const Hero = () => {
                     </span>
                   </div>
                 </div>
+
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                   <div className="text-2xl font-bold text-primary">8+</div>
@@ -231,11 +203,11 @@ export const Hero = () => {
           <div className="relative overflow-hidden">
             <div
               className="absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10"
+              bg-gradient-to-r from-background to-transparent z-10"
             />
             <div
               className="absolute right-0 top-0 bottom-0 w-32
-             bg-gradient-to-l from-background to-transparent z-10"
+              bg-gradient-to-l from-background to-transparent z-10"
             />
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => (
@@ -252,9 +224,9 @@ export const Hero = () => {
 
       <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 
-      animate-fade-in animation-delay-800"
+        animate-fade-in animation-delay-800"
       >
-        <a
+        
           href="#about"
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
