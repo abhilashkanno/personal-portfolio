@@ -4,7 +4,7 @@ const experiences = [
     role: "Senior Frontend Engineer",
     company: "Charles Schwab",
     description:
-      "Spearheaded end-to-end UX design and frontend engineering for an AI-native Developer Portal, delivering production React and TypeScript interfaces for GitHub workflows, SDLC automation, and AI assistant interaction patterns. Built a scalable component design system from Sketch wireframes to reusable UI components including chat panels, copilot surfaces, and contextual navigation. Integrated SSE and WebSockets for live agent execution feedback and real-time state updates. Applied WCAG accessibility standards, performance profiling, and code quality enforcement using ESLint, Prettier, and SonarQube.",
+      "Schwab is where I got to push the boundaries of what a developer portal can feel like. I designed and engineered an AI-native portal from the ground up, translating Sketch wireframes into production React and TypeScript interfaces that help engineers work smarter. From building a scalable component design system to wiring up real-time SSE and WebSocket streams, every piece was crafted to make complex AI interactions feel effortless. Agent orchestration UIs, copilot surfaces, WCAG accessibility, all shipped with care.",
     technologies: ["React", "TypeScript", "Redux", "Node.js", "SSE", "WebSockets", "Material UI", "Sketch"],
     current: true,
   },
@@ -13,7 +13,7 @@ const experiences = [
     role: "Frontend Developer",
     company: "Nike",
     description:
-      "Delivered UX design and frontend engineering for high-traffic e-commerce and product catalog platforms used by millions of consumers globally. Designed wireframes and prototypes in Sketch and built a reusable component-driven design system using ReactJS, TypeScript, Redux, and Material UI. Integrated RESTful APIs and GraphQL endpoints with optimistic UI updates, loading states, and error boundaries. Ensured cross-browser compatibility, responsive CSS3 layouts, and performance optimization through lazy loading and code splitting.",
+      "Building for Nike meant building for everyone. I crafted frontend experiences across the product catalog, cart, and checkout flows, surfaces used by millions of people around the world every day. I designed in Sketch, built a shared React and TypeScript component system, and obsessed over every millisecond through lazy loading, code splitting, and bundle optimization. I also helped grow the team's frontend culture through code reviews and mentoring.",
     technologies: ["React", "TypeScript", "GraphQL", "Node.js", "Jest", "CSS3", "Sketch", "GitLab CI/CD"],
     current: false,
   },
@@ -22,7 +22,7 @@ const experiences = [
     role: "Software Engineer",
     company: "UnitedHealth Group",
     description:
-      "Designed and built responsive provider and member portal UX for enterprise healthcare applications, conducting stakeholder interviews and delivering intuitive claims processing interfaces that reduced support volume. Evolved a reusable UI component library using ReactJS, TypeScript, HTML5, CSS3, and Redux. Implemented React-based form validation, multi-step wizards, and data-entry UX patterns for provider enrollment and member registration workflows. Designed accessible interfaces following WCAG guidelines using Material UI and Bootstrap.",
+      "Healthcare UX is unforgiving and people depend on it. At UnitedHealth Group, I designed and built provider and member portals that simplified overwhelming workflows like claims processing and enrollment. Starting from stakeholder interviews and Sketch wireframes, I worked all the way through to accessible, WCAG-compliant React interfaces. A reusable component library and thoughtful multi-step form patterns made a measurable difference in submission accuracy and support volume.",
     technologies: ["React", "TypeScript", "Node.js", "Redux", "CSS3", "Bootstrap", "Material UI", "Sketch"],
     current: false,
   },
@@ -31,7 +31,7 @@ const experiences = [
     role: "Software Developer",
     company: "Tata Consultancy Services",
     description:
-      "Designed and developed responsive web interfaces for insurance product configuration and policy management systems using HTML5, CSS3, JavaScript, and ReactJS. Implemented CSS-based theming and component styling to standardize visual design across multiple insurance product interfaces. Integrated frontend applications with RESTful APIs and Node.js services, building data-driven UI components for real-time policy and claims information. Produced wireframes and UX documentation to support stakeholder reviews and design iterations.",
+      "Insurance products are notoriously complex and my job was to make them feel simple. At TCS I turned dense business requirements into clean, intuitive web interfaces using React, JavaScript, HTML5, and CSS3. I built theming systems, wired up data-driven UI components to RESTful and Node.js APIs, and kept stakeholders and developers in sync through detailed wireframes and UX documentation.",
     technologies: ["React", "JavaScript", "HTML5", "CSS3", "Node.js", "RESTful APIs"],
     current: false,
   },
@@ -40,12 +40,11 @@ const experiences = [
     role: "Software Developer",
     company: "AccelQ",
     description:
-      "Contributed to a cloud-based codeless test automation platform, building frontend interfaces and interactive configuration UX using JavaScript and HTML5 for non-technical users. Built reusable UI components and drag-and-drop workflow builders using JavaScript and CSS3. Designed and implemented a results dashboard UI using ReactJS and CSS3 that visualized test execution status and pass/fail trends in real time. Configured npm-based build toolchains and integrated GitHub Actions for frontend CI pipelines.",
+      "Where it all began. At AccelQ I helped bring a codeless test automation platform to life, one where non-technical users could build and run test scenarios without touching a line of code. I designed the configuration UX, built drag-and-drop workflow builders, and shipped a real-time results dashboard in React and CSS3. Setting up npm toolchains and GitHub Actions pipelines gave the team a solid, automated foundation to build on.",
     technologies: ["React", "JavaScript", "CSS3", "HTML5", "npm", "GitHub Actions", "Jest"],
     current: false,
   },
 ];
-
 export const Experience = () => {
   return (
     <section id="experience" className="py-32 relative overflow-hidden">
