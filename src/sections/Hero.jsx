@@ -10,7 +10,6 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
-  // Frontend Core
   "React",
   "TypeScript",
   "JavaScript",
@@ -21,16 +20,12 @@ const skills = [
   "Tailwind CSS",
   "Bootstrap",
   "Material UI",
-
-  // UX & Design
   "Sketch",
   "Figma",
   "Wireframing",
   "Prototyping",
   "Design Systems",
   "Component Libraries",
-
-  // Frontend Tooling
   "Node.js",
   "npm",
   "Webpack",
@@ -38,40 +33,33 @@ const skills = [
   "ESLint",
   "Prettier",
   "Storybook",
-
-  // APIs & Integration
   "RESTful APIs",
   "GraphQL",
   "SSE",
   "WebSockets",
-
-  // Testing
   "Jest",
   "React Testing Library",
   "Cypress",
   "Selenium",
   "Postman",
-
-  // Version Control & CI/CD
   "Git",
   "GitHub",
   "GitHub Actions",
   "GitLab CI/CD",
-
-  // Cloud & DevOps
   "AWS",
   "Docker",
   "Kubernetes",
-
-  // Code Quality
   "SonarQube",
   "WCAG Accessibility",
-
-  // Other
   "OAuth 2.0",
   "JWT",
   "Agile",
   "Scrum",
+];
+
+const socials = [
+  { icon: Linkedin, href: "https://www.linkedin.com/in/abhilashk99/" },
+  { icon: Github, href: "https://github.com/abhilashkanno" },
 ];
 
 export const Hero = () => {
@@ -129,7 +117,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Abhilash Kannoju — a Senior Frontend
+                Hi, I'm Abhilash Kannoju — a Senior Frontend Engineer
                 with 8+ years of experience building high-performance React and
                 TypeScript applications and translating design intent into
                 polished, accessible user interfaces.
@@ -138,21 +126,19 @@ export const Hero = () => {
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-  <span className="text-sm text-muted-foreground">Follow me: </span>
-  {[
-    { icon: Linkedin, href: "https://www.linkedin.com/in/abhilashk99/" },
-    { icon: Github, href: "https://github.com/abhilashkanno" }
-  ].map((social, idx) => (
-    
-      key={idx}
-      href={social.href}
-      className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
-    >
-      <social.icon className="w-5 h-5" />
-    </a>
-  ))}
-</div>
+              <span className="text-sm text-muted-foreground">Follow me: </span>
+              {socials.map((social, idx) => (
+                
+                  key={idx}
+                  href={social.href}
+                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
           </div>
+
           {/* Right Column - Profile Image */}
           <div className="relatice animate-fade-in animation-delay-300">
             {/* Profile Image */}
